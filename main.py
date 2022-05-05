@@ -1,5 +1,5 @@
 # %%
-import Hydrograph as hdg
+from hydrology import Hydrograph as hdg
 
 
 time = list(range(0, 14+1, 2))
