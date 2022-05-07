@@ -1,16 +1,9 @@
 # %%
 from hydrology import FrequencyAnalysis as fqa
-
-
-sr = [0, 15, 191, 54, 37, 28, 21, 15, 10, 6, 3, 0]
-excessRainfall = [20, 40, 0]
-hg = hdg.Hydrograph(time, sr)
-# uh = UH.UnitHydrograph(time, sr, duration=2, timestep=2)
-hg.plot()
+from hydraulics.Pipeflow import Circle
+from hydraulics.Pipeflow import BernoulliEquation
 # %%
-uh = hdg.UnitHydrograph(time, sr, duration=6, timestep=6)
-uh.plot()
-
-# %%
-uh.area()
-# %%
+Re = Circle(diameter=0.75).reynolds_number(3.0, kinematicViscosity=0.856e-6)
+eq = BernoulliEquation(l=300)
+hl = eq.darcy_weisbach(hl=None, f=0.015, d=0.075, u=3)
+hl
