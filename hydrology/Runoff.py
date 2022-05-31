@@ -373,7 +373,7 @@ def plot_flows(times, flows: list[list], alpha=0.7):
     flowSum = [sum(items) for items in zip(*flows)]
     plt.plot(times, flowSum, label='flow sum')
 
-    plt.title('Hahah')
+    plt.title('Flow')
     plt.xlabel('Time (min)')
     plt.ylabel('Discharge (m3/s)')
     plt.tight_layout()
