@@ -1,7 +1,7 @@
 # PyWaterEng
 This repo is for undergraduate water engineering education, including hydrology and hydraulics. With the help of this package, you can check your homework calculation (some are extremely error-prone) and visualize your results.
 
-![](figure\figure1.png)
+![](figure/figure1.png)
 
 For hydrology, we cover:
 
